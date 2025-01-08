@@ -1,0 +1,586 @@
+/* Overall Body Background and Text */
+body {
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Default text color */
+    font-family: 'Arial', sans-serif;
+    padding-top: 56px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #008080; /* Teal background */
+}
+
+/* Navbar brand with logo and text */
+.navbar-brand {
+    font-size: 3rem; /* Larger font size */
+    font-weight: bold; /* Make text bold */
+    color: #FFFFFF; /* White color for the font */
+    text-shadow: 0 0 10px #00FFCC, 0 0 20px #00FFCC, 0 0 30px #00FFCC, 0 0 40px #00FFCC; /* Neon teal glow effect */
+    transition: text-shadow 0.3s ease, color 0.3s ease; /* Smooth transition effect */
+    display: flex;
+    align-items: center; /* Vertically align the text and logo */
+}
+
+/* Logo image size and margin */
+.navbar-brand img {
+    width: 50px; /* Adjust the logo size */
+    height: auto;
+    margin-right: 10px; /* Add space between logo and text */
+}
+
+/* Hover effect for stronger neon teal glow */
+.navbar-brand:hover {
+    color: #FFFFFF; /* Keep the font white on hover */
+    text-shadow: 0 0 20px #00FFCC, 0 0 30px #00FFCC, 0 0 40px #00FFCC, 0 0 50px #00FFCC; /* Stronger neon teal glow */
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF; /* White color for links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF7F00; /* Orange color for hover */
+}
+
+/* Header and Hero Section */
+.header {
+    background-color: #008080; /* Teal background for header */
+    color: #FFFFFF; /* White text */
+    padding: 50px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF; /* White color for header title */
+}
+
+/* Card Styling */
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #008080; /* Teal color for card titles */
+}
+
+.card-body {
+    background-color: #FFF8F0; /* Light orange background for card body */
+}
+
+.card .btn-primary {
+    background-color: #FF7F00; /* Orange button */
+    border-color: #FF7F00;
+}
+
+.card .btn-primary:hover {
+    background-color: #FF5500; /* Darker orange on hover */
+    border-color: #FF5500;
+}
+
+/* Student Benefits Section */
+.card.p-3 {
+    background-color: #f0f9f9; /* Light teal background */
+}
+
+.card.text-center h2 {
+    color: #008080; /* Teal color for section titles */
+}
+
+/* About Us Section */
+#about-us {
+    background-color: #fff5e0; /* Light orange background */
+    padding: 40px;
+}
+
+#about-us h2 {
+    color: #FF7F00; /* Orange color for "About Us" title */
+}
+
+#about-us p {
+    color: #333; /* Dark text for readability */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #008080; /* Teal background */
+    color: #FFFFFF; /* White text */
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Add some space above the footer */
+}
+
+
+.footer a {
+    color: #FF7F00; /* Orange color for footer links */
+}
+
+.footer a:hover {
+    color: #FF5500; /* Darker orange on hover */
+}
+
+/* Adjustments for Carousel */
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+}
+
+/* General Button Styles */
+.btn {
+    border-radius: 5px;
+}
+
+/* signup button */
+.custom-orange-btn {
+    background-color: #FFA500 !important; /* Orange color with higher priority */
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-orange-btn:hover {
+    background-color: #FF8C00 !important; /* Darker orange for hover effect */
+    color: white !important;
+}
+
+.orange-btn {
+    background-color: #ff7f50 !important; /* Orange color with higher priority */
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.orange-btn:hover {
+    background-color: #FF8C00 !important; /* Darker orange for hover effect */
+    color: white !important;
+}
+
+/* Selection Styles */
+::selection {
+    background-color: #004c4c; /* Dark teal */
+    color: white;
+}
+
+/* Specific selection color for profile content */
+.main-content ::selection {
+    background-color: #ff7f50; /* Coral */
+    color: white;
+}
+
+/* Header background with semi-transparent overlay */
+.header-clothingbg {
+    background: url('clothingbg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 400px; /* Use min-height to ensure padding is respected */
+    padding-top: 150px;
+    box-sizing: content-box; /* Default behavior */
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.header-foodbg {
+    background: url('foodbg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 400px; /* Use min-height to ensure padding is respected */
+    padding-top: 150px;
+    box-sizing: content-box; /* Default behavior */
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.header-textbookbg {
+    background: url('bookbg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 400px; /* Use min-height to ensure padding is respected */
+    padding-top: 150px;
+    box-sizing: content-box; /* Default behavior */
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.header-snacksbg {
+    background: url('snacksbg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 400px; /* Use min-height to ensure padding is respected */
+    padding-top: 150px;
+    box-sizing: content-box; /* Default behavior */
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.header-stationerybg {
+    background: url('stationerybg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 400px; /* Use min-height to ensure padding is respected */
+    padding-top: 150px;
+    box-sizing: content-box; /* Default behavior */
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+/* Header text styling */
+.header-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Navbar styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+/* Section styles */
+.section {
+    padding: 60px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    max-width: 400px; /* Set max width to reduce the card size */
+    margin: 0 auto; /* Center the card */
+}
+
+form .form-control {
+    font-size: 14px; /* Make the text inside input fields smaller */
+    padding: 8px; /* Reduce padding to make the form more compact */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-footer {
+    background-color: #fff;
+}
+
+.btn-outline-dark {
+    border-color: #343a40;
+    color: #343a40;
+}
+
+.btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Footer styles */
+footer {
+    background-color: #008080;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 2rem;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .btn-outline-dark {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* Add to Cart button */
+.add-to-cart {
+    border-color: #ff7043; /* Orange border */
+    color: #ff7043; /* Orange text */
+}
+
+.add-to-cart:hover {
+    background-color: #ff7043; /* Orange background */
+    color: #ffffff;
+}
+
+/* Example CSS to style cart elements */
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin: 5px 0;
+}
+
+#total-price {
+    font-weight: bold;
+}
+
+/* Pop-up message style */
+ #cartMessage {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+            font-size: 16px;
+            z-index: 9999;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+.custom-orange-button {
+    background-color: #FFA500; /* Orange background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.custom-orange-button:hover {
+    background-color: #FF8C00; /* Darker orange on hover */
+}
+
+/*cart style*/
+        .cart-shortcut {
+            position: fixed;
+            top: 30px;
+            right: 10px;
+            z-index: 1000;
+}
+
+/* profile sidebar */
+.list-group-item-action.custom-style { 
+    background-color: white !important;
+    color: black !important;
+    border: 0px solid black !important;
+}
+
+.list-group-item-action.custom-style:hover {
+    background-color: #FF8C00 !important;
+    color: white !important;
+    border-color: #FF8C00 !important;
+}
+
+.list-group-item-action.custom-style.active {
+    background-color: #FF8C00 !important; /* Green background for active option */
+    color: white !important; /* White text color for active option */
+    border-color: #FF8C00 !important; /* Green border for active option */
+}
+
+/* Add padding to body to account for fixed navbar */
+body {
+      padding-top: 70px; /* Adjust based on navbar height */
+      height: 100%; /* Ensure body takes full height for scrolling */
+      overflow-x: hidden; /* Avoid horizontal scrolling */
+}
+
+/* Adding gap between Order History and Footer */
+.order-history-container {
+      margin-bottom: 50px; /* Adjust the gap as needed */
+}
+
+/ cancelling hover tranformation in faqs */
+.accordion .card-header .btn-link {
+      transition: none; /* Disables any transition effect */
+}
+
+.accordion .card-header .btn-link:hover {
+      transform: none; /* Cancels any transformation on hover */
+}
+
+.custom-padding {
+    padding: 1px; /* Adjust as needed */
+}
+
+

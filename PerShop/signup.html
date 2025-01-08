@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - PerShop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS -->
+</head>
+<body>
+<!-- Collapsible Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.jpg" alt="PerShop Logo" style="width: 50px; height: auto; margin-right: 10px;">PerShop
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="deals.html">Student Deals</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">My Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Log In / Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Sign Up Form -->
+    <div class="container py-5">
+        <div class="row justify-content-center" style="padding-top: 10px;">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h3 class="text-center">Create an Account</h3>
+                    <form action="signup-action.php" method="POST">
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+
+                        <!-- Email Address -->
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+                        </div>
+
+                        <!-- Confirm Password -->
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn custom-orange-btn btn-block">Sign Up</button>
+
+                        <div class="text-center mt-3">
+                            <p>Already have an account? <a href="login.html">Log In</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="py-5 footer">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; PerShop 2025</p></div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
